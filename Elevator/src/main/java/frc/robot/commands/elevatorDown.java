@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj2.command.CommandGroupBase;
 import frc.robot.Robot;
 import frc.robot.subsystems.Elevator;
 
-public class elevatorDown extends CommandBase {
+public class elevatorDown extends Robot {
     public elevatorDown() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
@@ -19,19 +19,19 @@ public class elevatorDown extends CommandBase {
 
     // Called just before this Command runs the first time
       //sid - changed to public
-      @Override
+//@Override
       public void initialize() {
 
       }
     
       // Called repeatedly when this Command is scheduled to run
-      @Override
+     // @Override
       public void execute() {
         Robot.m_elev.lower();
       }
     
       // Make this return true when this Command no longer needs to run execute()
-      @Override
+     // @Override
       public boolean isFinished() {
         return !Robot.m_oi.elevDownCheck();
       }
