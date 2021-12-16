@@ -27,13 +27,13 @@ public class elevatorUp extends Robot {
       }
     
       // Called repeatedly when this Command is scheduled to run
-   //   @Override
+  //   @Override
      protected void execute() {
         Robot.m_elev.raise();
       }
     
       // Make this return true when this Command no longer needs to run execute()
-   //   @Override
+    // @Override
      protected boolean isFinished() {
         return !Robot.m_oi.elevUpCheck();
       }

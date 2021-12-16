@@ -33,7 +33,7 @@ public class Robot extends TimedRobot {
   public static Joystick joy = new Joystick(0);
   public static OI m_oi = new OI();
   Button button = new JoystickButton(joy, 1);
-  PWMVictorSPX talon = new PWMVictorSPX(1); //0 bad, 1 good
+  PWMVictorSPX talon = new PWMVictorSPX(0); //0 bad, 1 good
   // WPI_TalonSRX talon2 = new WPI_TalonSRX(2);
   PWMVictorSPX cargoTalon = new PWMVictorSPX(0);
   // DifferentialDrive drive = new DifferentialDrive(talon, talon2);
