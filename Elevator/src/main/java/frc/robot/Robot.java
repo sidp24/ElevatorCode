@@ -7,8 +7,9 @@
 
 package frc.robot;
 
-import com.ctre.phoenix.motorcontrol.ControlMode;
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import edu.wpi.first.wpilibj.PWMVictorSPX;
+import edu.wpi.first.wpilibj.SpeedController;
+import edu.wpi.first.wpilibj.SpeedControllerGroup;
 
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -32,9 +33,9 @@ public class Robot extends TimedRobot {
   public static Joystick joy = new Joystick(0);
   public static OI m_oi = new OI();
   Button button = new JoystickButton(joy, 1);
-  WPI_TalonSRX talon = new WPI_TalonSRX(1); //0 bad, 1 good
+  PWMVictorSPX talon = new PWMVictorSPX(1); //0 bad, 1 good
   // WPI_TalonSRX talon2 = new WPI_TalonSRX(2);
-  WPI_TalonSRX cargoTalon = new WPI_TalonSRX(0);
+  PWMVictorSPX cargoTalon = new PWMVictorSPX(0);
   // DifferentialDrive drive = new DifferentialDrive(talon, talon2);
   // Encoder code = new Encoder(0,1,false,EncodingType.k4X);
   /**

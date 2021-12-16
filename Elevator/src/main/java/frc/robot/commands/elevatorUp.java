@@ -22,25 +22,25 @@ public class elevatorUp extends Robot {
     // Called just before this Command runs the first time
       //sid - changed to public
 //@Override
-      public void initialize() {
+      protected void initialize() {
 
       }
     
       // Called repeatedly when this Command is scheduled to run
-     // @Override
-      public void execute() {
+   //   @Override
+     protected void execute() {
         Robot.m_elev.raise();
       }
     
       // Make this return true when this Command no longer needs to run execute()
-     // @Override
-      public boolean isFinished() {
+   //   @Override
+     protected boolean isFinished() {
         return !Robot.m_oi.elevUpCheck();
       }
     
       // Called once after isFinished returns true
 //@Override
-      public void end() {
+protected void end() {
         Robot.m_elev.stop();
       }
     
@@ -48,7 +48,7 @@ public class elevatorUp extends Robot {
       // subsystems is scheduled to run
       
       // @Override
-      public void interrupted() {
+      protected void interrupted() {
         end();
       }
 }
